@@ -17,10 +17,10 @@ Each project is stored in its own folder for easy access.
 
 ## 📂 Projects
 
-- [Text-to-SQL Queries](./TexttoSQL)  
+- [Text-to-SQL Queries](./TextToSQL)  
   Converts natural language questions into SQL queries and executes them on a MySQL database. Built with LangChain, Cohere, and Streamlit.  
 
-- [Multi-modal RAG Application](./Multimodal_RAG_Application)  
+- [Multi-modal RAG Application](./Multimodal_RAG_Agent)  
   Answers queries using both text and image data (like graphs). Uses Retrieval-Augmented Generation (RAG) for context-based responses.  
 
 ---
