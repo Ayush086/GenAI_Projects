@@ -1,0 +1,11 @@
+langchain
+langchain-cohere
+langchain_community
+pymysql
+chromadb
+pandas
+transformers
+langchain_experimental
+pydantic
+sqlparse
+streamlit
