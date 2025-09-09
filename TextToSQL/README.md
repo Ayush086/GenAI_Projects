@@ -40,6 +40,7 @@ After validating the workflow in the notebook, the code was refactored into modu
 - **Dynamic Table Selection**: Only relevant tables are included in prompts for concise and accurate SQL generation.
 - **Few-Shot Learning**: Uses example queries to improve LLM performance.
 - **Follow-Up Memory**: Remembers chat history for context-aware answers.
+- **Query Suggestion**: Recommends queries based on current query.
 - **Streamlit UI**: User-friendly chat interface.
 
 ---
@@ -112,12 +113,6 @@ textToSql/
 - **LLM**: Swap out Cohere for another LLM in `utils.py` and `table_details.py`.
 - **Examples**: Add more few-shot examples in `examples.py` for better accuracy.
 - 
----
-
-## Credits
-
-- Built with [LangChain](https://python.langchain.com/), [Cohere](https://cohere.com/), [Streamlit](https://streamlit.io/), and [Pandas](https://pandas.pydata.org/).
-- Inspired by real-world business analytics and natural language interfaces for databases.
 
 ---
 
