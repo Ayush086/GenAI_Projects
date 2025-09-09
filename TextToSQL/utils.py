@@ -77,9 +77,12 @@ def create_history(messages):
 def invoke_chain(question,messages):
     chain = get_chain()
     history = create_history(messages)
-    response = chain.invoke({"question": question,"top_k":3,"messages":history.messages})
-    history.add_user_message(question)
-    history.add_ai_message(response)
-    return response
+    try:
+        response = chain.invoke({"question": question,"top_k":3,"messages":history.messages})
+        history.add_user_message(question)
+        history.add_ai_message(response)
+        return response
+    except Exception as e:
+        return f"Sorry, there was an error executing your query: {e}"
 
 
